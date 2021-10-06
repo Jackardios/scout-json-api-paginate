@@ -1,0 +1,55 @@
+{
+    "name": "jackardios/scout-json-api-paginate",
+    "description": "Extension for https://github.com/spatie/laravel-json-api-paginate",
+    "keywords": [
+        "jackardios",
+        "spatie",
+        "laravel-json-api-paginate",
+        "scout",
+        "eloquent"
+    ],
+    "homepage": "https://github.com/jackardios/scout-json-api-paginate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Salakhutdinov Salavat",
+            "email": "salahutdinov.salavat@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "laravel/scout": "^8.0|^9.0",
+        "spatie/laravel-json-api-paginate": "^1.10"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jackardios\\ScoutJsonApiPaginate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jackardios\\ScoutJsonApiPaginate\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jackardios\\JsonApiPaginate\\JsonApiPaginateServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
