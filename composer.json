@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jackardios\\JsonApiPaginate\\JsonApiPaginateServiceProvider"
+                "Jackardios\\ScoutJsonApiPaginate\\JsonApiPaginateServiceProvider"
             ]
         }
     },
